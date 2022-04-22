@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CalendarOptions } from '@fullcalendar/angular';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
-  constructor() {}
+  calendarOptions: CalendarOptions = {
+    initialView: 'dayGridMonth'
+  };
+  constructor() { }
 
 }
