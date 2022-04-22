@@ -13,14 +13,29 @@
         <li *ngFor='let event of currentEvents'>
           <b>{{event.startStr}}</b>
           <i>{{event.title}}</i>
+          <ion-button (click)="modalOpen()" expand="block" fill="clear" shape="round">
+            Click me
+          </ion-button>
         </li>
       </ul>
     </div>
 
-    <div class='demo-app-main'>
-      <full-calendar *ngIf='calendarVisible' [options]='calendarOptions'></full-calendar>
-    </div>
+    <!-- <div class='demo-app-main'> -->
+    <!-- </div> -->
   </div>
+  <full-calendar #calendarRef *ngIf='calendarVisible' [options]='calendarOptions'></full-calendar>
+
+  <!-- 기본 꼴 <full-calendar [options]="calendarOptions"></full-calendar> -->
+
+  <!-- <full-calendar deepChangeDetection="true" [options]="calendarOptions"></full-calendar> -->
+
+  <!-- <full-calendar #calendar [options]="calendarOptions"></full-calendar> -->
+
+  <!-- toggle weekend 기능 
+<button (click)="toggleWeekends()">toggle weekends</button>
+<full-calendar [options]="calendarOptions"></full-calendar>
+-->
+
 
 
 

@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Add a Schedule</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Title</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+
+  </ion-item>
+  <ion-list>
+    <ion-item>
+
+      <ion-label class="ion-align-items-center">
+        <ion-icon slot="icon-only" name="time-outline"></ion-icon>
+        All-day
+      </ion-label>
+      <ion-toggle (ionChange)="toggleChange($event)" color="primary"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Start</ion-label>
+      <ion-text>
+        asdfas
+      </ion-text>
+    </ion-item>
+  </ion-list>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-button (click)="onClickCancel()" expand="full" fill="clear">
+          Cancel
+        </ion-button>
+
+      </ion-col>
+      <ion-col size="6">
+        <ion-button (click)="onClickSave()" expand="full" fill="solid" color="primary">
+          Save
+        </ion-button>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
