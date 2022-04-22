@@ -28,6 +28,9 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     FullCalendarModule
 
   ],
+  exports: [
+    FullCalendarModule
+  ],
   declarations: [HomePage]
 })
 export class HomePageModule { }
