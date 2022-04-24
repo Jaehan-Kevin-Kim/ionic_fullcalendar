@@ -59,11 +59,13 @@ export class CalendarPage implements AfterViewInit {
   }
 
   async handleDateSelect(selectInfo: DateSelectArg) {
+    console.log('selectInfo: ', selectInfo);
+
     console.log('clicked');
 
     const modal = await this._modalCtrl.create({
       component: CalendarModalPage,
-      componentProps: { calendarRef: this.calendarRef },
+      componentProps: { calendarRef: this.calendarRef, selectInfo },
       cssClass: 'calendar-modal',
       backdropDismiss: true
     });

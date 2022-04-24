@@ -25,6 +25,7 @@
     "@fullcalendar/list": "^5.11.0",
     "@fullcalendar/timegrid": "^5.11.0",
     "@ionic/angular": "^6.0.0",
+    "dayjs": "^1.11.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"
